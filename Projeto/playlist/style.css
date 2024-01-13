@@ -1,5 +1,5 @@
 body{
-    background-image: url('/playlist/images/background.jpg') ;
+    background-image: url('/Projeto/playlist/images/background.jpg') ;
 }
 
 *{
@@ -12,15 +12,15 @@ body{
 
 @font-face {
     font-family: Smooch;
-    src:url(/Fonts/static/SmoochSans-ExtraLight.ttf);
+    src:url(/Projeto/Fonts/static/SmoochSans-ExtraLight.ttf);
 }
 @font-face {    
     font-family: Caveat;
-    src: url(/Fonts/static/Caveat-Bold.ttf);
+    src: url(/Projeto/Fonts/static/Caveat-Bold.ttf);
 }
 @font-face{
     font-family: Teko;
-    src: url(/Fonts/static/Teko-Bold.ttf);
+    src: url(/Projeto/Fonts/static/Teko-Bold.ttf);
 }
 
 /* ------ header ------*/
