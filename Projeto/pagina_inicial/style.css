@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------ text-fonts ------*/
+
+@font-face {
+    font-family: Smooch;
+    src:url(/Fonts/static/SmoochSans-ExtraLight.ttf);
+}
+@font-face {    
+    font-family: Caveat;
+    src: url(/Fonts/static/Caveat-Bold.ttf);
+}
+@font-face{
+    font-family: Teko;
+    src: url(/Fonts/static/Teko-Bold.ttf);
+}
+
+/* ------ header ------*/
+#myplaylist{
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+#mymerch{
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+#mybio{
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+#myabout{
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1300px;
+    margin:auto;
+}
+
+.logo img{
+    padding-top: 50px;
+    width: 150px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+    padding-bottom: 45px;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.shop{
+    padding-bottom: 45px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+p{
+    color:#ffffff;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 70%;
+    padding: 50px 0;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+.col-2 h2{
+    font-family: Teko;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 20px 0;
+}
+
+.col-2 p{
+    font-family: Teko;
+    font-size: 25px;
+}
+
+.button{
+    display: inline-block;
+    background: #000000;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.button:hover {
+    background-color: #555151;
+}
+
+.header{
+    background: radial-gradient(#ffffff,#000000)
+}
+
+.header .row{
+    margin-top: 50px;
+}
+
+/*------ menu icon ------*/
+
+.menu-bar{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+    padding-bottom: 45px;
+}
+
+/* ------ Playlist ------*/
+
+.categories{
+    margin:150px;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+/* ------ featured-products ------*/
+
+.small-container{
+    max-width: 1080px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+.playlist{
+    display: flex;
+    justify-content: center;
+    font-family: Caveat;
+    font-size: 45px;
+}
+
+.col-4{
+    flex-basis: 35%;
+    padding: 0px;
+    min-width: 200px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.col-4-1{
+    flex-basis: 35%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    transition: transform 0.5s;
+}
+
+.col-4-1 img{
+    width: 85%;
+}
+
+.col-4-1:hover{
+    transform: translateY(-5px);
+}
+
+.col-4-2{
+    flex-basis: 35%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    transition: transform 0.5s;
+}
+
+.col-4-2 img{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.col-4-2:hover{
+    transform: translateY(-5px);
+}
+
+.small-container h2{
+    margin-top:200px ;
+    font-family: Teko;
+    font-size: 50px;
+}
+.col-4-2 h4{
+    margin-top: 15px;
+}
+
+.small-container h4{
+    font-family: Teko;
+}
+/* ------ Biography ------*/
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+.title::after{
+    content:'';
+    background: #555151;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 46%;
+}
+
+.box{
+    border-radius: 20px;
+    background-color: #000;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+.box p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.box h1{
+    text-decoration: underline;
+}
+
+
+/*------ brands ------*/
+
+.brands{
+    margin: 100px auto;
+}
+
+.col-6{
+    width: 160px;
+    margin-bottom: 50px;
+}
+.col-6 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-6 img:hover{
+    filter: grayscale(0%);
+}
+
+.col-7{
+    width: 100px;
+    margin-bottom: 50px;
+}
+.col-7 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-7 img:hover{
+    filter: grayscale(0%);
+}
+/*------ footer ------*/
+
+.footer{
+    font-size: 14px;
+    padding: 60px 0 20px;
+    color: #8a8a8a;
+    background:#000;
+}
+
+.footer p{
+    color: #8a8a8a
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    min-width: 250px;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+}
+.logo1{
+    margin-bottom: -5px;
+}
+
+.footer-col-1 h3{
+    font-family: smooch;
+    font-size: 30px;
+}
+
+.footer-col-1 p{
+    font-family: Caveat;
+    font-size: 25px;
+}
+
+.footer-col-2 {
+    flex-basis: 12%;
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+/*------ media query for menu ------*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color:#fff
+    }
+    .menu-bar{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*------ media query for less than 600 screen size ------*/
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4, .col-4-1, .col-4-2{
+        flex-basis: 100%;
+    }
+}

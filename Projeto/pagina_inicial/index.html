@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Drizzy Hub"</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://kit.fontawesome.com/dada07158c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!----- header-of-the-website ------>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1><img src="/Images/logo/drizzyhub_logo.png"></h1>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a >Home</a></li>
+                        <li><a id="mymerch">Merch</a></li>
+                        <li><a id="myplaylist">Playlist</a></li>
+                     <li><a id="mybio">Bio</a></li>
+                     <li><a id="myabout">About</a></li>
+                    </ul>
+
+                </nav>
+                <img src="/Images/Icons/shopping-cart.png" alt="Shopping-Cart" class="shop" width="25px">
+                <img src="/Images/Icons/menu-bar.png" alt="menu-bar" class="menu-bar" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h2>"Go for it now.<br>The future is promised to no one"</h2>
+                    <p>"OVO Sound: Where beats meet brilliance"</p>
+                    <a class="button">Learn More &#8680;</a>
+                </div>
+                <div class="col-2">
+                    <img src="/Images/brands/OVO_Sound.png" alt="ovo-sound-label">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!----- Hot Tunes ------>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="/Images/albuns/for_all_dogs.png" alt="for-all-the-dogs">
+                </div>
+                <div class="col-3">
+                    <img src="/Images/albuns/her_loss.webp" alt="her-loss">
+                </div>
+                <div class="col-3">
+                    <img src="/Images/albuns/nevermind.jpg" alt="honestly-nevermind">
+                </div>
+                <h3 class="playlist"><u>"Started from the bottom, now we're here."</u></h3>
+                <a href="" class="button">Playlist &#8680;</a>
+            </div>
+        </div>
+    </div>
+
+<!----- feature-products ------>
+
+    <div class="small-container">
+        <h2 class="title">Featured Products:</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="/Images/merch/certified_lover_boy_black.webp" alt="Jordan-4-Retro">
+                <h4>Certified Lover Boy Hoodie - "Black"</h4>
+                <h5>90€</h5>
+            </div>
+            <div class="col-4-1">
+                <img src="/Images/merch/anita_max-wynn.avif" alt="Jordan-1-Travis">
+                <h4>"Anita Max Wynn" Cap - "Blue"</h4>
+                <h5>30€</h5>
+            </div>
+            <div class="col-4">
+                <img src="/Images/merch/slaughter_gang_t.webp" alt="Jordan-11-Low">
+                <h4>Slaughter Gang T-shirt - "White"</h4>
+                <h5>50€</h5>
+            </div>
+            <div class="col-4-2">
+                <img src="/Images/merch/good_thoughts_candle.png" alt="Jordan-10-Retro">
+                <h4>Good Thoughts Candle</h4>
+                <h5>50€</h5>
+            </div>
+        </div>
+
+    <!----- biography ------>
+
+        <h2 class="title">Biography:</h2>
+        <div class="box">
+            <div class="row">
+                <h1>Aubrey Drake Graham</h1>
+                <p>Known professionally as Drake,
+                is a Canadian rapper and singer.<br>
+                An influential figure in contemporary popular music, Drake has been credited 
+                with popularizing singing and R&B sensibilities in hip hop artists.</p>
+                <a class="button">Biography &#8680;</a>
+            </div>
+        </div>
+    
+    </div>
+
+<!----- brands ------>
+
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="/Images/brands/pngwing.com (6).png" alt="pa-Logo">
+                    </div>
+                    <div class="col-6">
+                        <img src="/Images/brands/nike.png" alt="nike-Logo">
+                    </div>
+                    <div class="col-7">
+                        <img src="/Images/brands/ovo.png" alt="ovo-Logo">
+                </div>
+            </div>
+        </div>
+
+<!----- footer ------>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3><img src="/Images/logo/drizzyhub_logo.png" width="150px" alt="Logo" class="logo1"></h3>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Follow Us:</h3>
+                        <ul>
+                            <li>Instagram <i class="fa-brands fa-instagram" style="color: #ffffff;"></i></li>
+                            <li>Facebook <i class="fa-brands fa-facebook" style="color: #ffffff;"></i></li>
+                            <li>Twitter <i class="fa-brands fa-twitter" style="color: #ffffff;"></i></li>
+                            <li>Youtube <i class="fa-brands fa-youtube" style="color: #ffffff;"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+           
+            const myplaylist = document.getElementById("myplaylist");
+
+        
+            myplaylist.addEventListener("click", function () {
+           
+                window.location.href = "http://127.0.0.1:5500/playlist/index.html";
+            });
+        });
+
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
