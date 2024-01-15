@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"Drizzy Hub"</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" href="/Projeto/Images/logo/drizzyhub_logo.png" type="image">
     <script src="https://kit.fontawesome.com/dada07158c.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,7 +15,7 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <h1><img src="/Projeto/Images/logo/drizzyhub_logo.png"></h1>
+                    <h1><img src="/Projeto/Images/logo/drizzyhub_logo.png" id="myhub"></h1>
                 </div>
                 <nav>
                     <ul id="MenuItems">
@@ -213,6 +214,17 @@
             mybio.addEventListener("click", function () {
                 
                 window.location.href = "http://127.0.0.1:5500/Projeto/bio/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const myhub = document.getElementById("myhub");
+
+           
+            myhub.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/pagina_inicial/index.html";
             });
         });
 

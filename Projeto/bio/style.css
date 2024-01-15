@@ -25,6 +25,11 @@ body{
 }
 
 /* ------ header ------*/
+
+#myhub{
+    cursor: pointer;
+}
+
 #myhome{
     width: 25px;
     height: auto;

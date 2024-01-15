@@ -15,7 +15,7 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <h1><img src="/Projeto/Images/logo/drizzyhub_logo.png"></h1>
+                    <h1><img src="/Projeto/Images/logo/drizzyhub_logo.png" id="myhub"></h1>
                 </div>
                 <nav class="nav1">
                     <ul id="MenuItems">
@@ -147,6 +147,18 @@
                 MenuItems.style.maxHeight = "0px";
             }
         }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const myhub = document.getElementById("myhub");
+
+           
+            myhub.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/pagina_inicial/index.html";
+            });
+        });
+        
     </script>
 </body>
 </html>

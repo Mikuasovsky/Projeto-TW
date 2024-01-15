@@ -25,6 +25,10 @@ body{
 
 /* ------ header ------*/
 
+#myhub{
+    cursor: pointer;
+}
+
 #myplaylist{
     width: 25px;
     height: auto;
@@ -236,7 +240,6 @@ h2{
 
 .ovo{
     width: 450px;
-    display: flex;
     float: right;
     margin-right: 250px;
 }

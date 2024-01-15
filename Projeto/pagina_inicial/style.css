@@ -20,6 +20,11 @@
 }
 
 /* ------ header ------*/
+
+#myhub{
+    cursor: pointer;
+}
+
 #myplaylist{
     width: 25px;
     height: auto;
