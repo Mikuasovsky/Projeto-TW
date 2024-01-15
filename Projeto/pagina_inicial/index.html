@@ -18,7 +18,7 @@
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a >Home</a></li>
+                        <li><a id="myhome">Home</a></li>
                         <li><a id="mymerch">Merch</a></li>
                         <li><a id="myplaylist">Playlist</a></li>
                      <li><a id="mybio">Bio</a></li>
@@ -33,7 +33,7 @@
                 <div class="col-2">
                     <h2>"Go for it now.<br>The future is promised to no one"</h2>
                     <p>"OVO Sound: Where beats meet brilliance"</p>
-                    <a class="button">Learn More &#8680;</a>
+                    <a id="mybtn1" class="button">Learn More &#8680;</a>
                 </div>
                 <div class="col-2">
                     <img src="/Projeto/Images/brands/OVO_Sound.png" alt="ovo-sound-label">
@@ -56,7 +56,7 @@
                     <img src="/Projeto/Images/albuns/nevermind.jpg" alt="honestly-nevermind">
                 </div>
                 <h3 class="playlist"><u>"Started from the bottom, now we're here."</u></h3>
-                <a href="" class="button">Playlist &#8680;</a>
+                <a id="mybtn2" class="button">Playlist &#8680;</a>
             </div>
         </div>
     </div>
@@ -88,7 +88,7 @@
             </div>
         </div>
 
-    <!----- biography ------>
+<!----- biography ------>
 
         <h2 class="title">Biography:</h2>
         <div class="box">
@@ -98,7 +98,7 @@
                 is a Canadian rapper and singer.<br>
                 An influential figure in contemporary popular music, Drake has been credited 
                 with popularizing singing and R&B sensibilities in hip hop artists.</p>
-                <a class="button">Biography &#8680;</a>
+                <a id="mybtn3" class="button">Biography &#8680;</a>
             </div>
         </div>
     
@@ -142,6 +142,9 @@
                 <hr>
             </div>
     </div>
+
+<!----- scrypt ------>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
            
@@ -168,6 +171,51 @@
                 MenuItems.style.maxHeight = "0px";
             }
         }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const mybtn1 = document.getElementById("mybtn1");
+
+           
+            mybtn1.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/ovo/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const mybtn2 = document.getElementById("mybtn2");
+
+           
+            mybtn2.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/playlist/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const mybtn3 = document.getElementById("mybtn3");
+
+           
+            mybtn3.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/bio/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const mybio = document.getElementById("mybio");
+
+           
+            mybio.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/bio/index.html";
+            });
+        });
+
     </script>
 </body>
 </html>

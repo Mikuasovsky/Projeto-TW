@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Biography"</title>
+    <link rel="stylesheet" type="text/css" href="/Projeto/bio/style.css">
+    <script src="https://kit.fontawesome.com/dada07158c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!----- header-of-the-website ------>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1><img src="/Projeto/Images/logo/drizzyhub_logo.png"></h1>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a id="myhome">Home</a></li>
+                        <li><a id="mymerch">Merch</a></li>
+                        <li><a id="myplaylist">Playlist</a></li>
+                     <li><a id="mybio">Bio</a></li>
+                     <li><a id="myabout">About</a></li>
+                    </ul>
+
+                </nav>
+                <img src="/Projeto/Images/Icons/shopping-cart.png" alt="Shopping-Cart" class="shop" width="25px">
+                <img src="/Projeto/Images/Icons/menu-bar.png" alt="menu-bar" class="menu-bar" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!----- biography ------>
+
+        <h2 class="title">Biography:</h2>
+        <div class="box">
+            <div class="row2">
+                <h1>Who's Drake?</h1>
+                <p>Aubrey Drake Graham was born on October 24, 1986 in Toronto (Canada), where he was 
+                    raised, and is a celebrated rapper,<br>
+                     songwriter, actor and businessman. Currently Drake is one of the biggest names 
+                     in contemporary hip hop.
+                </p>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="row">
+                <h1>How It All Started</h1>
+                <p>In the world of music, the rapper released his first mixtape called Room for improvement in 2006.<br>
+                    The following year it was time to promote Comeback Season and began to receive support from illustrious
+                    producers such as Kanye West, Lil Wayne and Jay-z.<br>
+                    At that time Drake was already leaning more towards the world of music than acting.<br>As an actor, he made
+                    few appearances in one-off series such as The Border (2008) and Being Erica (2009).
+                </p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="bio2">
+                <h1>The Rapper's Career Climbing</h1>
+                <p>Em 2009 Drake assinou contrato com a Young Money de Lil Wayne tendo lançado "So far gone".<br>
+                     Dessa época são os sucessos "Best I ever had" e "I'm going' In". <br>
+                     No ano a seguir foi a vez de promover o seu disco "Thank me later".<br>
+                     Empreendedor, Drake fundou o Very Own (OVO), um coletivo sediado em Toronto que virou gravadora em outubro de 2012.
+                </p>
+                <button id="mybtn1" type="button" class="button">OVO &#8680;</button>
+                <button id="mybtn2" type="button" class="button">Playlist &#8680;</button>
+            </div>  
+        </div>
+        <img src="/Projeto/Images/bio/drake .png" alt="drake" class="img">
+
+    <!----- footer ------>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3><img src="/Projeto/Images/logo/drizzyhub_logo.png" width="150px" alt="Logo" class="logo1"></h3>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Follow Us:</h3>
+                        <ul>
+                            <li>Instagram <i class="fa-brands fa-instagram" style="color: #000000;"></i></li>
+                            <li>Facebook <i class="fa-brands fa-facebook" style="color: #000000;"></i></li>
+                            <li>Twitter <i class="fa-brands fa-twitter" style="color: #000000;"></i></li>
+                            <li>Youtube <i class="fa-brands fa-youtube" style="color: #000000;"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!----- scrypt ------>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+           
+            const myplaylist = document.getElementById("myplaylist");
+
+        
+            myplaylist.addEventListener("click", function () {
+           
+                window.location.href = "http://127.0.0.1:5500/Projeto/playlist/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+           
+            const myhome = document.getElementById("myhome");
+
+        
+            myhome.addEventListener("click", function () {
+           
+                window.location.href = "http://127.0.0.1:5500/Projeto/pagina_inicial/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const mybio = document.getElementById("mybio");
+
+           
+            mybio.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/bio/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const mybtn1 = document.getElementById("mybtn1");
+
+           
+            mybtn1.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/ovo/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const mybtn2 = document.getElementById("mybtn2");
+
+           
+            mybtn2.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/playlist/index.html";
+            });
+        });
+
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
+  

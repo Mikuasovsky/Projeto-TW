@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Playlist"</title>
-    <link rel="stylesheet" type="text/css" href="/Projeto/playlist/style.css">
+    <title>"OVO_Sound"</title>
+    <link rel="stylesheet" type="text/css" href="/Projeto/ovo/style.css">
     <script src="https://kit.fontawesome.com/dada07158c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <!----- header-of-the-website ------>
 
     <div class="header">
@@ -16,15 +17,14 @@
                 <div class="logo">
                     <h1><img src="/Projeto/Images/logo/drizzyhub_logo.png"></h1>
                 </div>
-                <nav>
+                <nav class="nav1">
                     <ul id="MenuItems">
                         <li><a id="myhome">Home</a></li>
                         <li><a id="mymerch">Merch</a></li>
                         <li><a id="myplaylist">Playlist</a></li>
-                        <li><a id="mybio">Bio</a></li>
-                        <li><a id="myabout">About</a></li>
+                     <li><a id="mybio">Bio</a></li>
+                     <li><a id="myabout">About</a></li>
                     </ul>
-
                 </nav>
                 <img src="/Projeto/Images/Icons/shopping-cart.png" alt="Shopping-Cart" class="shop" width="25px">
                 <img src="/Projeto/Images/Icons/menu-bar.png" alt="menu-bar" class="menu-bar" onclick="menutoggle()">
@@ -32,64 +32,54 @@
         </div>
     </div>
 
-    <!----- playlist ------>
-    <h2>PLAYLIST</h2>
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="/Projeto/Images/albuns/for_all_dogs.png" alt="for-all-the-dogs">
-                    <p>FOR ALL THE DOGS</p>
-                </div>
-                <div class="col-4">
-                    <img src="/Projeto/Images/albuns/nevermind.jpg" alt="honestly-nevermind">
-                    <p>HOSNESTLY, NEVERMIND</p>
+    <!----- ovo_sound ------>
 
-                </div>
-            </div>
+        <h2 class="title">OVO Sound:</h2>
+        <div class="box">
             <div class="row2">
-                <div class="col-5">
-                    <img src="/Projeto/Images/albuns/her_loss.webp" alt="her-loss">
-                    <p>HER LOSS</p>
-                </div>
+                <h1>What's OVO?</h1>
+                <p>OVO Sound is a Canadian independent record label,
+                    founded in 2012 by rapper "Drake", producer "40", and manager "Oliver El-Khatib".<br>
+                      Between 2012 and 2022, it operated as a subsidiary of Warner Records.
+                </p>
             </div>
-            <div class="row2">
-                <div class="col-6">
-                    <img src="/Projeto/Images/albuns/scary_hours.jpg" alt="scary-hours-2">
-                    <p>SCARY HOURS 2</p>
-                </div>
-                <div class="col-7">
-                    <img src="/Projeto/Images/albuns/certified_lover_boy.webp" alt="certified-lover-boy">
-                    <p>CERTIFIED LOVER BOY</p>
-                </div>
-            </div>
-                <div class="row2">
-                    <div class="col-8">
-                        <img src="/Projeto/Images/albuns/scorpion.jpg" alt="scorpion">
-                        <p>SCORPION</p>
-                    </div>
-                </div>
-                <div class="row2">
-                    <div class="col-9">
-                        <img src="/Projeto/Images/albuns/iyrtitl.jpg" alt="IYRTITL">
-                        <p>I . Y . R . T . I . T . L .</p>
-                    </div>
-                    <div class="col-10">
-                        <img src="/Projeto/Images/albuns/more_life.webp" alt="more-life">
-                        <p>MORE LIFE</p>
-                    </div>
-                </div>
-                <div class="row3">
-                    <div class="col-11">
-                        <img src="/Projeto/Images/albuns/views.png" alt="views">
-                        <p>VIEWS</p>
-                    </div>
         </div>
-    </div>
+        <img src="/Projeto/Images/brands/OVO_Sound.png" class="ovo" alt="ovo_sound">
+        <div class="box2">
+            <div class="row2">
+                <h1>How It All Started</h1>
+                <p>The label's roots can be traced back to 2006, when Drake's first official mixtape,<br>
+                    "Room for Improvement", was released under the unofficial record label "All Things Fresh" which eventually<br> 
+                    became "October's Very Own". Drake later raised the profile of the label by prominently featuring OVO throughout his music.
+                </p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="row2">
+                <img src="/Projeto/Images/bio/party_next_door.png" class="img1" alt="party_next_door">
+                <h1>Artists</h1>
+                <nav class="nav2">
+                    <ul id="MenuItems">
+                        <li><a> DRAKE </a></li><br>
+                        <li><a> PARTYNEXTDOOR </a></li><br>
+                        <li><a> DVSN </a></li><br>
+                        <li><a> MAJID JORDAN </a></li><br>
+                        <li><a> ROY WOODS </a></li><br>
+                        <li><a> POPCAAN </a></li><br>
+                        <li><a> BAKA NOT NICE </a></li><br>
+                        <li><a> SMILEY</a></li><br>
+                        <li><a> NAOMI SHARON </a></li>
+                    </ul>
+                </nav>
+                <img src="/Projeto/Images/bio/baka_not_nice.png" class="img2" alt="dvsn">
+            </div>
+        </div>
+        
 
     <!----- footer ------>
 
         <div class="footer">
+            <div class="container">
                 <div class="row">
                     <div class="footer-col-1">
                         <h3><img src="/Projeto/Images/logo/drizzyhub_logo.png" width="150px" alt="Logo" class="logo1"></h3>
@@ -104,13 +94,23 @@
                         </ul>
                     </div>
                 </div>
-                <hr>
             </div>
-    </div>
-
+        </div>
+        
 <!----- scrypt ------>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+           
+            const myplaylist = document.getElementById("myplaylist");
+
+        
+            myplaylist.addEventListener("click", function () {
+           
+                window.location.href = "http://127.0.0.1:5500/Projeto/playlist/index.html";
+            });
+        });
+
         document.addEventListener("DOMContentLoaded", function () {
            
             const myhome = document.getElementById("myhome");
@@ -132,7 +132,7 @@
                 window.location.href = "http://127.0.0.1:5500/Projeto/bio/index.html";
             });
         });
-        
+
         var MenuItems = document.getElementById("MenuItems");
 
         MenuItems.style.maxHeight = "0px";
@@ -147,7 +147,7 @@
                 MenuItems.style.maxHeight = "0px";
             }
         }
-
     </script>
 </body>
 </html>
+  
