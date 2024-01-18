@@ -105,45 +105,6 @@ nav ul li{
     padding-bottom: 45px;
 }
 
-/*------ media query for menu ------*/
-
-@media only screen and (max-width: 800px){
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color:#fff
-    }
-    .menu-bar{
-        display: block;
-        cursor: pointer;
-    }
-}
-
-/*------ media query for less than 600 screen size ------*/
-
-@media only screen and (max-width: 600px){
-    .row{
-        text-align: center;
-    }
-
-    .col-2, .col-3, .col-4, .col-4-1, .col-4-2{
-        flex-basis: 100%;
-    }
-}
-
 /* ------ Playlist ------*/
 
 h2{
@@ -351,4 +312,53 @@ p{
 
 ul{
     list-style-type: none;
+}
+
+/*------ media query for menu ------*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color:#fff
+    }
+    .menu-bar{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 800px) {
+    .row{
+        text-align: center;
+    }
+
+    .col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11 {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11 {
+        flex-basis: 100%;
+    }
+
+    .row{
+        text-align: center;
+    }
 }
