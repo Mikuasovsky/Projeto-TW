@@ -32,6 +32,7 @@
             <h2>Air Drake Blanket</h2>
             <img src="/Projeto/Images/merch/air_drake_blanket.webp" alt="air_drake_blanket" width="200">
             <p>Preço: 50€</p>
+            <button class="btn" id="mycart">Add to cart</button>
         </div>
         </section>
 
@@ -42,6 +43,8 @@
                 <h2>Anita Max Wynn Hat</h2>
                 <img src="/Projeto/Images/merch/anita_max-wynn.avif" alt="anita_max_wynn_hat" width="170">
                 <p>Preço: 30€</p>
+                <button class="btn" id="mycart">Add to cart</button>
+
             </div>
             </section>
 
@@ -51,6 +54,8 @@
                     <h2>Certified Lover <br>Boy Hoodie - "Black"</h2>
                     <img src="/Projeto/Images/merch/certified_lover_boy_black.webp" alt="certified_lover_boy_black" width="200">
                     <p>Preço: 90€</p>
+                    <button class="btn" id="mycart">Add to cart</button>
+
                 </div>
                 </section>
 
@@ -61,6 +66,8 @@
                         <h2>Slaughter Gang <br>T-shirt</h2>
                         <img src="/Projeto/Images/merch/slaughter_gang_t.webp" alt="slaughter_gang_t" width="200">
                         <p>Preço: 90€</p>
+                        <button class="btn" id="mycart">Add to cart</button>
+
                     </div>
                     </section>
 
@@ -92,6 +99,16 @@
             });
         });
 
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const mycart = document.getElementById("mycart");
+
+           
+            mycart.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/carrinho_compras/index.html";
+            });
+        });
     </script>
 
 
