@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------ text-fonts ------*/
+
+@font-face {
+    font-family: Smooch;
+    src:url(/Fonts/static/SmoochSans-ExtraLight.ttf);
+}
+@font-face {    
+    font-family: Caveat;
+    src: url(/Fonts/static/Caveat-Bold.ttf);
+}
+@font-face{
+    font-family: Teko;
+    src: url(/Fonts/static/Teko-Light.ttf);
+}
+/* ------ header ------*/
+
+.logo{
+    font-family: Smooch;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#myhub{
+    cursor: pointer;
+}
+
+#myImage{
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+.header{
+    background: radial-gradient(#fff,#000000)
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color:#555;
+    cursor: pointer;
+}
+
+p{
+    color:#555;
+}
+
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding-left: px;
+    padding-right: 15px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ 
+.header .row{
+    margin-top: 70px;
+}
+
+/*------ card-item-details ------*/
+
+.cart-page{
+    margin: 80px auto;
+    max-width: 1300px;
+    background: white;
+    border:solid;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-info img{
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.table th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: black;
+    font-weight: normal;
+}
+.table td{
+    padding: 10px 5px;
+
+}
+.table td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px; 
+}
+.table td a{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    
+}
+.table td img{
+  width: 80px;
+  margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid rgb(0, 0, 0);
+    width: 100%;
+    max-width: 382px;
+    margin-bottom: 157px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+/*------ footer ------*/
+
+.footer{
+    font-size: 14px;
+    padding: 60px 0 20px;
+    color: #8a8a8a;
+    background:#000;
+}
+
+.footer p{
+    color: #8a8a8a
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    min-width: 250px;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+}
+.logo1{
+    margin-bottom: -5px;
+}
+
+.footer-col-1 h3{
+    font-family: smooch;
+    font-size: 30px;
+}
+
+.footer-col-1 p{
+    font-family: Caveat;
+    font-size: 25px;
+}
+
+.footer-col-2 {
+    flex-basis: 12%;
+    text-align: right;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*------ menu icon ------*/
+
+.menu-bar{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*------ media query for menu ------*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color:#fff
+    }
+    .menu-bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    .cart-info p{
+        display: none;
+    }
+}
+
+/*------ media query for less than 600 screen size ------*/
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4, .col-4-1, .col-4-2{
+        flex-basis: 100%;
+    }
+}
+

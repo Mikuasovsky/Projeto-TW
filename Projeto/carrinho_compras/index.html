@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drizzy Hub</title>
+    <link rel="stylesheet" type="text/css" href="/Projeto/carrinho_compras/style.css">
+    <script src="https://kit.fontawesome.com/dada07158c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<!------ header-of-the-website ------>
+        <!------ logo-and-nav-bar ------>
+
+<div class="header">
+   <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1><img src="/Projeto/Images/logo/drizzyhub_logo.png" width="70px" alt="Logo" id="myhub"> </h1>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li id="myhome"><a >Home</a></li>    
+                    <li id="mymerch"><a >Merch</a></li>
+                    <li id="myplaylist"><a>Playlist</a></li>
+                    <li id="mybio"><a>Bio</a></li>
+                    <li id="myabout"><a >About</a></li>
+                    
+                
+                </ul>
+            </nav>
+            <img id="myImage" src="/Projeto/Images/Icons/shopping-cart.png" alt="Clickable Image">
+            <img src="/Projeto/Images/Icons/menu-bar.png" alt="menu-bar" class="menu-bar" width="25px" onclick="menutoggle()">
+        </div>
+    </div><hr>
+</div>
+
+<!------ card item details ------>
+        <div class="small-container cart-page">
+
+            <table class="table">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td><div class="cart-info">
+                        <img src="/Projeto/Images/merch/good_thoughts_candle.png" alt="good_thoughts_candle" id="myproduct">
+                        <div>
+                            <p>Good Thoughts Candle</p>
+                            <small>Price: 50€</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>50€</td>
+                </tr>
+                <tr>
+                    <td><div class="cart-info">
+                        <img src="/Projeto/Images/merch/certified_lover_boy_black.webp" alt="certified_lover_boy_black">
+                        <div>
+                            <p>Certified Lover Boy Hoodie - "Black"</p>
+                            <small>Price: 90€</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>140€</td>
+                </tr>
+                <tr>
+                    <td><div class="cart-info">
+                        <img src="/Projeto/Images/merch/air_drake_blanket.webp" alt="air_drake_blanket">
+                        <div>
+                            <p>Air Drake Blanket</p>
+                            <small>Price: 50€</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>190€</td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>190€</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>14.70€</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>204.70€</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+<!------ footer ------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3><img src="/Projeto/Images/logo/drizzyhub_logo.png" width="150px" alt="Logo" class="logo1"></h3>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow Us:</h3>
+                    <ul>
+                        <li>Instagram <i class="fa-brands fa-instagram" style="color: #ffffff;"></i></li>
+                        <li>Facebook <i class="fa-brands fa-facebook" style="color: #ffffff;"></i></li>
+                        <li>Twitter <i class="fa-brands fa-twitter" style="color: #ffffff;"></i></li>
+                        <li>Youtube <i class="fa-brands fa-youtube" style="color: #ffffff;"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+<!------ toggle-menu ------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+           
+            const myhome = document.getElementById("myhome");
+
+        
+            myhome.addEventListener("click", function () {
+           
+                window.location.href = "http://127.0.0.1:5500/Projeto/pagina_inicial/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const mybio = document.getElementById("mybio");
+
+           
+            mybio.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/bio/index.html";
+            });
+        });
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const myhub = document.getElementById("myhub");
+
+           
+            myhub.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/pagina_inicial/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const mymerch = document.getElementById("mymerch");
+
+           
+            mymerch.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/Projeto/loja_main/Untitled-1%20(1).html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+           
+            const myplaylist = document.getElementById("myplaylist");
+
+        
+            myplaylist.addEventListener("click", function () {
+           
+                window.location.href = "http://127.0.0.1:5500/Projeto/pagina_inicial/index.html";
+            });
+        });
+
+    </script>
+</body>
+</html>

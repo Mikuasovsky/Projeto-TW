@@ -25,6 +25,12 @@
     cursor: pointer;
 }
 
+#myimage{
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
 #myplaylist{
     width: 25px;
     height: auto;

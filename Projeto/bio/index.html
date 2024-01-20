@@ -27,7 +27,7 @@
                     </ul>
 
                 </nav>
-                <img src="/Projeto/Images/Icons/shopping-cart.png" alt="Shopping-Cart" class="shop" width="25px">
+                <img src="/Projeto/Images/Icons/shopping-cart.png" alt="Shopping-Cart" class="shop" width="25px" id="myimage">
                 <img src="/Projeto/Images/Icons/menu-bar.png" alt="menu-bar" class="menu-bar" onclick="menutoggle()">
             </div>
         </div>
@@ -187,6 +187,17 @@
             });
         });
         
+        document.addEventListener("DOMContentLoaded", function () {
+           
+            const myimage = document.getElementById("myimage");
+
+            
+            myimage.addEventListener("click", function () {
+               
+                window.location.href = "http://127.0.0.1:5501/Projeto/carrinho_compras/index.html";
+            });
+        });
+
     </script>
 </body>
 </html>
