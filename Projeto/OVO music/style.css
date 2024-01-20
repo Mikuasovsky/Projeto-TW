@@ -25,6 +25,10 @@ body{
 
 /* ------ header ------*/
 
+#mycart{
+    cursor: pointer;
+}
+
 #myhub{
     cursor: pointer;
 }

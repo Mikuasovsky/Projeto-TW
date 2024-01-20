@@ -228,8 +228,28 @@ h2{
     padding-bottom: 20px;
 }
 
+.button{
+    display: inline-block;
+    background: #000000;
+    color: white;
+    padding: 8px 30px;
+    margin-left: 205px;
+    margin-top: 30px;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
 
+.button:hover {
+    background-color: #555151;
+}
 
+#mybtn1{
+    cursor: pointer;
+}
+
+#mybtn2{
+    cursor: pointer;
+}
 
 
 /*------ footer ------*/
