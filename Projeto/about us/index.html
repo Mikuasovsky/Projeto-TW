@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Biography"</title>
-    <link rel="stylesheet" type="text/css" href="/Projeto/bio/style.css">
+    <title>"Drizzy Hub"</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" href="/Projeto/Images/logo/drizzyhub_logo.png" type="image">
     <script src="https://kit.fontawesome.com/dada07158c.js" crossorigin="anonymous"></script>
 </head>
+<body>
+</head>
+
 <body>
 
     <!----- header-of-the-website ------>
@@ -17,7 +21,7 @@
                 <div class="logo">
                     <h1><img src="/Projeto/Images/logo/drizzyhub_logo.png" id="myhub"></h1>
                 </div>
-                <nav>
+                <nav class="nav1">
                     <ul id="MenuItems">
                         <li><a id="myhome">Home</a></li>
                         <li><a id="mymerch">Merch</a></li>
@@ -25,74 +29,41 @@
                      <li><a id="mybio">Bio</a></li>
                      <li><a id="myabout">About</a></li>
                     </ul>
-
                 </nav>
-                <img src="/Projeto/Images/Icons/shopping-cart.png" alt="Shopping-Cart" class="shop" width="25px" id="myimage">
+                <img src="/Projeto/Images/Icons/shopping-cart.png" alt="Shopping-Cart" class="shop" width="25px">
                 <img src="/Projeto/Images/Icons/menu-bar.png" alt="menu-bar" class="menu-bar" onclick="menutoggle()">
             </div>
         </div>
-    </div>
+    </div>    
 
-    <!----- biography ------>
+    <section class="aboutus">
+        <h1>About Us</h1>
+        <p>
+            We decided to create this website ispired by Drakes influence and our liking to him, its also based on his own website "Drake Related"
+        </p>
+        <p>
+            Welcome to our corner of the web, where the beats of our passion collide with the rhythm of technology. We are a dynamic trio of college students who share a common love for the unparalleled musical genius that is Drake.
+        </p>
+        <p>
+            Together, we've embarked on a journey to create a virtual space that celebrates Drake's influence on music and pop culture. Our website is more than just a collection of facts; it's a testament to the impact one artist can have on a generation. Whether you're here to delve into Drake's discography, stay updated on the latest news, or simply soak in the vibes, we invite you to join us on this musical odyssey.
+        </p>
 
-        <h2 class="title">Biography:</h2>
-        <div class="box">
-            <div class="row2">
-                <h1>Who's Drake?</h1>
-                <p>Aubrey Drake Graham was born on October 24, 1986 in Toronto (Canada), where he was 
-                    raised, and is a celebrated rapper,<br>
-                     songwriter, actor and businessman. Currently Drake is one of the biggest names 
-                     in contemporary hip hop.
-                </p>
-            </div>
+        <div class="team-member">
+            <img src="/Projeto/Images/gabi.jpg" alt="Gabriel Barbosa">
+            <h2>Gabriel Barbosa</h2>
         </div>
-        <div class="box2">
-            <div class="row">
-                <h1>How It All Started</h1>
-                <p>In the world of music, the rapper released his first mixtape called Room for improvement in 2006.<br>
-                    The following year it was time to promote Comeback Season and began to receive support from illustrious
-                    producers such as Kanye West, Lil Wayne and Jay-z.<br>
-                    At that time Drake was already leaning more towards the world of music than acting.<br>As an actor, he made
-                    few appearances in one-off series such as The Border (2008) and Being Erica (2009).
-                </p>
-            </div>
-        </div>
-        <div class="box3">
-            <div class="bio2">
-                <h1>The Rapper's Career Climbing</h1>
-                <p>Em 2009 Drake assinou contrato com a Young Money de Lil Wayne tendo lançado "So far gone".<br>
-                     Dessa época são os sucessos "Best I ever had" e "I'm going' In". <br>
-                     No ano a seguir foi a vez de promover o seu disco "Thank me later".<br>
-                     Empreendedor, Drake fundou o Very Own (OVO), um coletivo sediado em Toronto que virou gravadora em outubro de 2012.
-                </p>
-                <button id="mybtn1" type="button" class="button">OVO &#8680;</button>
-                <button id="mybtn2" type="button" class="button">Playlist &#8680;</button>
-            </div>  
-        </div>
-        <img src="/Projeto/Images/bio/drake .png" alt="drake" class="img">
 
-    <!----- footer ------>
-
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col-1">
-                        <h3><img src="/Projeto/Images/logo/drizzyhub_logo.png" width="150px" alt="Logo" class="logo1"></h3>
-                    </div>
-                    <div class="footer-col-2">
-                        <h3>Follow Us:</h3>
-                        <ul>
-                            <li>Instagram <i class="fa-brands fa-instagram" style="color: #000000;"></i></li>
-                            <li>Facebook <i class="fa-brands fa-facebook" style="color: #000000;"></i></li>
-                            <li>Twitter <i class="fa-brands fa-twitter" style="color: #000000;"></i></li>
-                            <li>Youtube <i class="fa-brands fa-youtube" style="color: #000000;"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="team-member">
+            <img src="/Projeto/Images/miguel.jpg" alt="Miguel Silva">
+            <h2>Miguel Silva</h2>
         </div>
-        
-<!----- scrypt ------>
+
+        <div class="team-member">
+            <img src="/Projeto/Images/sheldon.jpg" alt="Sheldon Jasse">
+            <h2>Sheldon Jasse</h2>
+        </div>
+    </section>
+    <!----- scrypt ------>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -198,18 +169,6 @@
             });
         });
 
-        document.addEventListener("DOMContentLoaded", function () {
-           
-            const myabout = document.getElementById("myabout");
-
-        
-            myabout.addEventListener("click", function () {
-           
-                window.location.href = "http://127.0.0.1:5500/Projeto/about%20us/index.html";
-            });
-        });
-
     </script>
 </body>
 </html>
-  

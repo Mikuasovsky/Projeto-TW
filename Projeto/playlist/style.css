@@ -288,6 +288,26 @@ p{
     text-align: center;
 }
 
+.button{
+    font-family: Teko;
+    font-size: 20px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 50px 100px;
+    margin-left: 40px;
+    border-radius: 20px;
+    transition: background 0.5s;
+    margin-top: 50px;
+}
+
+.button:hover {
+    background-color: #555151;
+}
+
+#mybtn1{
+    cursor: pointer;
+}
+
 /*------ footer ------*/
 
 .footer{
