@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"Drizzy Hub"</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="/Projeto/about.css">
     <link rel="icon" href="/Projeto/Images/logo/drizzyhub_logo.png" type="image">
     <script src="https://kit.fontawesome.com/dada07158c.js" crossorigin="anonymous"></script>
 </head>
@@ -30,7 +30,7 @@
                      <li><a id="myabout">About</a></li>
                     </ul>
                 </nav>
-                <img src="/Projeto/Images/Icons/shopping-cart.png" alt="Shopping-Cart" class="shop" width="25px">
+                <img src="/Projeto/Images/Icons/shopping-cart.png" alt="Shopping-Cart" class="shop" width="25px" id="myimage">
                 <img src="/Projeto/Images/Icons/menu-bar.png" alt="menu-bar" class="menu-bar" onclick="menutoggle()">
             </div>
         </div>
@@ -49,17 +49,17 @@
         </p>
 
         <div class="team-member">
-            <img src="/Projeto/Images/gabi.jpg" alt="Gabriel Barbosa">
+            <img src="/Projeto/Images/pessoal/gabi.jpg" alt="Gabriel Barbosa">
             <h2>Gabriel Barbosa</h2>
         </div>
 
         <div class="team-member">
-            <img src="/Projeto/Images/miguel.jpg" alt="Miguel Silva">
+            <img src="/Projeto/Images/pessoal/miguel.jpg" alt="Miguel Silva">
             <h2>Miguel Silva</h2>
         </div>
 
         <div class="team-member">
-            <img src="/Projeto/Images/sheldon.jpg" alt="Sheldon Jasse">
+            <img src="/Projeto/Images/pessoal/sheldon.jpg" alt="Sheldon Jasse">
             <h2>Sheldon Jasse</h2>
         </div>
     </section>
@@ -73,7 +73,7 @@
         
             myplaylist.addEventListener("click", function () {
            
-                window.location.href = "http://127.0.0.1:5500/Projeto/playlist/index.html";
+                window.location.href = "http://127.0.0.1:5500/Projeto/playlist.html";
             });
         });
 
@@ -84,7 +84,7 @@
         
             myhome.addEventListener("click", function () {
            
-                window.location.href = "http://127.0.0.1:5500/Projeto/pagina_inicial/index.html";
+                window.location.href = "http://127.0.0.1:5500/Projeto/index.html";
             });
         });
 
@@ -95,29 +95,7 @@
            
             mybio.addEventListener("click", function () {
                 
-                window.location.href = "http://127.0.0.1:5500/Projeto/bio/index.html";
-            });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            
-            const mybtn1 = document.getElementById("mybtn1");
-
-           
-            mybtn1.addEventListener("click", function () {
-                
-                window.location.href = "http://127.0.0.1:5500/Projeto/ovo/index.html";
-            });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            
-            const mybtn2 = document.getElementById("mybtn2");
-
-           
-            mybtn2.addEventListener("click", function () {
-                
-                window.location.href = "http://127.0.0.1:5500/Projeto/playlist/index.html";
+                window.location.href = "http://127.0.0.1:5500/Projeto/bio.html";
             });
         });
 
@@ -143,7 +121,7 @@
            
             myhub.addEventListener("click", function () {
                 
-                window.location.href = "http://127.0.0.1:5500/Projeto/pagina_inicial/index.html";
+                window.location.href = "http://127.0.0.1:5500/Projeto/index.html";
             });
         });
 
@@ -154,7 +132,7 @@
            
             mymerch.addEventListener("click", function () {
                 
-                window.location.href = "http://127.0.0.1:5500/Projeto/loja_main/Untitled-1%20(1).html";
+                window.location.href = "http://127.0.0.1:5500/Projeto/loja.html";
             });
         });
         
@@ -165,7 +143,7 @@
             
             myimage.addEventListener("click", function () {
                
-                window.location.href = "http://127.0.0.1:5500/Projeto/carrinho_compras/index.html";
+                window.location.href = "http://127.0.0.1:5500/Projeto/cart.html";
             });
         });
 

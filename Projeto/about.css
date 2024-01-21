@@ -29,6 +29,10 @@ body{
 
 /* ------ header ------*/
 
+#myimage{
+    cursor: pointer;
+}
+
 #myhub{
     cursor: pointer;
 }
